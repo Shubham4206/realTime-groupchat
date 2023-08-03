@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="./css/chat.css">
+</head>
+<body>
+    <header>
+        <h2>Chat App</h2>
+    </header>
+    <div id="group-body">
+        <div id="group-header">
+            <button id="new-group-btn">Create a new group</button>
+            <!-- <button id="new-chat-btn">New chat</button> -->
+        </div>
+        <div id="chat-list">
+
+        </div>
+    </div>
+    <div class="container" id="chat-body">
+        <div id="open-chat">
+    
+        </div>
+        <div class="hide">Click to see members</div>
+        <div id="chat-ul">
+
+        </div>
+    </div>
+    <div id="members-list">
+        <button id="close-members-btn">X</button>
+        <ul id="members-ul">
+
+        </ul>
+    </div>
+    <footer>
+        <div id="form-div">
+            <form id="chat-form">
+                <input type="text" id="message" placeholder="Message..." size="80%">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </footer>
+</body>
+<script defer src="http://localhost:4000/socket.io/socket.io.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.2/axios.min.js"></script>
+<script defer src="chat.js"></script>
+</html>
